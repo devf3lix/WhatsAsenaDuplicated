@@ -73,4 +73,4 @@ Asena.addCommand({pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC}, (async (
     await message.sendMessage(
         '```' + child + '```', MessageType.text
     );
-})
+}));
