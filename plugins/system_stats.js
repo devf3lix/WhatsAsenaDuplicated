@@ -70,24 +70,14 @@ Asena.addCommand({pattern: 'bengeldim', fromMe: true, desc: Lang.ALIVE_DESC}, (a
     }
 }));
 
-Asena.addCommand({pattern: 'benkimim', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
-
-    
-
-    if (Config.ALIVEMSG == 'default') {
+Asena.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
         await message.client.sendMessage(
-
             message.jid, 
-
             fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/benkimim.mp4"),
-
             MessageType.video, 
-
-            { mimetype: Mimetype.gif, caption: "```Ben DevFelix, WhatsAsena'yı Editledim.```\n\n*Yaşım* ```17```\n*Bölümüm:* ```Elektrik Okuyorum Fakat Üniversitede Yazılım İstiyorum```\n*Websitelerim:* ```https://f3lixblack.com```\n*Hobilerim:* ```Müzik Dinlemeyi Severim, Çizgi Roman ve Bazı Yazarların Kitaplarını Okumayı Severim. Zeus Kabadayı Gibi. Yazılımla Uğraşırım. Bazen Kod Çaldığım Doğrudur ama Hangi Yazılımcı Yapmadı Ki Bunu.```\n```Yakında Bir Şahıs Şirketi Kurmayı Düşünüyoruz. Yazılım Üstüne. Ortağımda Var Fakat Para Kasmam Lazım. Yaklaşık 5 Yıl Sonra Gerçekleştireceğim Sanırım 😂```\n*YouTube Kanalım:* ```https://youtube.com/channel/UCH0Mywgj5mmdagLD-wMakVw```\nVe Şey Mutsuzum. " }
-
+            { mimetype: Mimetype.gif, caption: "```AsenaBlack DevFelix İçin Çalışıyor!```\n\n*Version:* ```0.25.2 - Dev```\n*Grade:* ```Developer```\n*AI Packages:* ```Xteam / Eva / DeepAI / AsenaBlack / RTDA```\n*DeepAI Version:* ```1.0.17```\n*XTeam Verison:* ```4.4```" }
         )
-
     }
 }));
 
@@ -151,3 +141,5 @@ Asena.addCommand({pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC}, (async (
         '```' + child + '```', MessageType.text
     );
 }));
+   
+
