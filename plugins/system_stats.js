@@ -25,7 +25,7 @@ Asena.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC}, (async
             message.jid, 
             fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/benkimim.mp4"),
             MessageType.video, 
-            { mimetype: Mimetype.gif, caption: "```AsenBlack FelixBlack İçin Çalışıyor!```\n\n*Version:* ```0.25.2 - Dev```\n*Grade:* ```Developer```\n*AI Packages:* ```Xteam / Eva / DeepAI / AsenaBlack / RTDA```\n*DeepAI Version:* ```1.0.17```\n*XTeam Verison:* ```4.4```" }
+            { mimetype: Mimetype.gif, caption: "```AsenaBlack FelixBlack İçin Çalışıyor!```\n\n*Version:* ```0.25.2 - Dev```\n*Grade:* ```Developer```\n*AI Packages:* ```Xteam / Eva / DeepAI / AsenaBlack / RTDA```\n*DeepAI Version:* ```1.0.17```\n*XTeam Verison:* ```4.4```" }
         )
     }
     else if (Config.ALIVEMSG == 'SELO') {
