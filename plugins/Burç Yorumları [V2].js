@@ -19,8 +19,9 @@ const balık = "Balık burcu için günlük yorumlar."
 const terazi = "Terazi burcu için günlük yorumlar."
 const boga = "Boğa burcu için günlük yorumlar."
 const aslan = "Aslan burcu için günlük yorumlar."
+const basak = "Başak burcu için günlük yorumlar."
 if (conf.WORKTYPE == 'private') {
-    Asena.addCommand({pattern: 'yengec$', fromMe: true, deleteCommand: false desc: yengec}, (async (message, match) => {
+    Asena.addCommand({pattern: 'yengec$', fromMe: true, deleteCommand: false, desc: yengec}, (async (message, match) => {
 
       const data = await axios.get('https://www.mynet.com/kadin/burclar-astroloji/yengec-burcu-gunluk-yorumu.html');
       const $ = cheerio.load(data.data);
@@ -131,7 +132,7 @@ if (conf.WORKTYPE == 'private') {
       
           }));
 
-    Asena.addCommand({pattern: 'basak$', fromMe: true, deleteCommand: false, desc: boga}, (async (message, match) => {
+    Asena.addCommand({pattern: 'basak$', fromMe: true, deleteCommand: false, desc: basak}, (async (message, match) => {
 
       const data = await axios.get('https://www.mynet.com/kadin/burclar-astroloji/basak-burcu-gunluk-yorumu.html');
       const $ = cheerio.load(data.data);
